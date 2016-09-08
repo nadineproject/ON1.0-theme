@@ -85,6 +85,14 @@ table td    {text-align: left;}
                 <td>{{ profile_form.phone2 }}</td>
                 <td>{{ profile_form.phone2.errors }}</td>
             </tr>
+            {% if ALLOW_PHOTO_UPLOAD %}
+            <tr class="row-odd">
+              <td><strong>UPLOAD PHOTO</strong></td>
+              <td>
+                <input type='file' name='photo' style='background-color:RGBA(255, 255, 255, 0);'/>
+              </td>
+            </tr>
+            {% endif %}
         </table>
 
         <h3>Websites &amp; Other Profiles</h3>
@@ -190,6 +198,13 @@ table td    {text-align: left;}
             </tr>
         </table>
 
+        <a name="public_profile"></a>
+        <table id='publicprofile'>
+          <tr>
+            <td class='public_bool'><strong>Make your profile public?</strong></td>
+            <td>{{ profile_form.public_profile }}</td>
+          </tr>
+        </table>
         <p align="center"><input type="submit" value="Update Your Profile" /></p>
         {% csrf_token %}
     </form>
