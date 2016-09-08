@@ -123,6 +123,11 @@ p {
 	margin: 10px auto;
 }
 
+#login_form {
+	width: 50%;
+	margin-left: 50%;
+}
+
 #login_box {
 	width: 50%;
 	display: inline-block;
@@ -134,10 +139,13 @@ p {
 
 #reg_box {
 	width: 50%;
-	float: right;
+	margin-left: 25%;
 }
 
-#registration_form {
+#login-btn, #loginonly-btn, #reg-btn {
+	width: 30%;
+	margin-left: 15%;
+	margin-right: 10%;
 }
 
 .triptic {
