@@ -28,7 +28,7 @@
 		<li><a href="#tabs-2">Here Today ({{ here_today | length }})</a></li>
 		{% if search_terms %}
 			<li><a href="#tabs-3" active="True">Search Results - {{ search_terms }}</a></li>
-		{% elif user.get_profile.is_manager %}
+		{% elif user.profile.is_manager %}
 			<li><a href="#tabs-4">Has Mail ({{ has_mail | length }})</a></li>
 			<li><a href="#tabs-5">Has Key ({{ has_key | length }})</a></li>
 		{% endif %}
