@@ -180,7 +180,7 @@ table td {
 	margin-bottom: 5%;
 }
 
-#contact input, #contact select, #websites input, #websites select, #emergencyinfo input, #otherinfo input, #otherinfo select, #pf-public {
+#contact input, #contact select, #websites input, #websites select, #emergencyinfo input, #otherinfo input, #otherinfo select, #pf-public, #emails input, #emails button{
 	font-size: 1em;
 }
 
@@ -237,6 +237,14 @@ input#id_emergency_phone {
 
 textarea#id_bio {
 	width: 600px;
+}
+
+#emails button {
+	border-radius: 2px;
+}
+
+#emails input {
+	width: 250px;
 }
 /*end Edit Profile page*/
 
