@@ -34,7 +34,7 @@ p {
 #page_container {
 	 min-height: 100%;
 	 position: relative;
-	 background-image: url(img/moo.jpg);
+	 background-image: url(../img/moo.jpg);
 	 background-repeat: no-repeat;
 	 background-size: cover;
 	 background-color: #405047;
@@ -272,7 +272,7 @@ table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }
 	height: 32px;
 	float: left;
 	margin-right: 10px;
-	background-image: url(img/facebook_32.png);
+	background-image: url(../img/facebook_32.png);
 	text-indent: -9999px;
 }
 
@@ -282,7 +282,7 @@ table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }
 	height: 32px;
 	float: left;
 	margin-right: 10px;
-	background-image: url(img/twitter_32.png);
+	background-image: url(../img/twitter_32.png);
 	text-indent: -9999px;
 }
 
@@ -292,7 +292,7 @@ table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }
 	height: 32px;
 	float: left;
 	margin-right: 10px;
-	background-image: url(img/yelp_32.png);
+	background-image: url(../img/yelp_32.png);
 	text-indent: -9999px;
 }
 
@@ -302,7 +302,7 @@ table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }
 	height: 32px;
 	float: left;
 	margin-right: 10px;
-	background-image: url(img/instagram_32.png);
+	background-image: url(../img/instagram_32.png);
 	text-indent: -9999px;
 }
 
