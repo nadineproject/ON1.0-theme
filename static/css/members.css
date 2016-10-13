@@ -199,10 +199,6 @@ td.pf-input {
 	padding-top: 0;
 }
 
-#email-btn {
-	width: 50%;
-}
-
 #pf-first, #pf-last {
 	text-align: left;
 }
@@ -244,7 +240,11 @@ textarea#id_bio {
 	background-color: RGBA(94, 138, 196, .7);
 	border-top: none;
 	border-left: none;
-	padding: 3% 9%;
+	padding: 1% 3%;
+}
+
+#emails td {
+	box-sizing: content-box;;
 }
 
 #emails input {
