@@ -224,11 +224,11 @@ input#id_address1, input#id_address2 {
 }
 
 input#id_url_professional, input#id_url_personal {
-	width: 250px;
+	width: 300px;
 }
 
 input#id_url_twitter, input#id_url_facebook, input#id_url_github, input#id_url_linkedin {
-	width: 200px;
+	width: 400px;
 }
 
 input#id_emergency_phone {
@@ -241,7 +241,7 @@ textarea#id_bio {
 
 #emails button {
 	border-radius: 2px;
-	background-color: RGBA(94, 138, 196, 1);
+	background-color: RGBA(94, 138, 196, .7);
 	border-top: none;
 	border-left: none;
 	padding: 3% 9%;
@@ -276,8 +276,8 @@ textarea#id_bio {
 	margin-top: 2%;
 	margin-left: 35%;
 	font-size: 1.2em;
-	border-radius: 4px;
-	background-color: RGBA(94, 138, 196, 1);
+	border-radius: 2px;
+	background-color: RGBA(94, 138, 196, .7);
 	border-top: none;
 	border-left: none;
 }

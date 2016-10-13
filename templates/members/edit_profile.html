@@ -194,23 +194,26 @@
         <tr class="row-even">
           <td class='cap-label'><strong>Twitter</strong></td>
           <td class='cap-label'><strong>Facebook</strong></td>
-          <td class='cap-label'><strong>LinkedIn </strong></td>
-          <td class='cap-label'><strong>Github</strong></td>
-            <!-- <td class='cap-label'><strong>About Me Profile</strong></td> -->
         </tr>
         <tr class="row-odd">
           <td>{{ profile_form.url_twitter }}</td>
           <td>{{ profile_form.url_facebook }}</td>
-          <td>{{ profile_form.url_linkedin }}</td>
-          <td>{{ profile_form.url_github }}</td>
-          <!-- <td>{{ profile_form.url_aboutme }}</td> -->
         </tr>
         <tr class="row-even">
           <td>{{ profile_form.url_twitter.errors }}</td>
           <td>{{ profile_form.url_facebook.errors }}</td>
+        </tr>
+        <tr>
+          <td class='cap-label'><strong>Github</strong></td>
+          <td class='cap-label'><strong>LinkedIn </strong></td>
+        </tr>
+        <tr>
+          <td>{{ profile_form.url_github }}</td>
+          <td>{{ profile_form.url_linkedin }}</td>
+        </tr>
+        <tr>
+        <td>{{ profile_form.url_github.errors }}</td>
           <td>{{ profile_form.url_linkedin.errors }}</td>
-          <td>{{ profile_form.url_github.errors }}</td>
-          <!-- <td>{{ profile_form.url_aboutme.errors }}</td> -->
         </tr>
       </table>
     </div>
