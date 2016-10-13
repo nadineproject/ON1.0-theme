@@ -241,6 +241,10 @@ textarea#id_bio {
 
 #emails button {
 	border-radius: 2px;
+	background-color: RGBA(94, 138, 196, 1);
+	border-top: none;
+	border-left: none;
+	padding: 3% 9%;
 }
 
 #emails input {
@@ -273,6 +277,9 @@ textarea#id_bio {
 	margin-left: 35%;
 	font-size: 1.2em;
 	border-radius: 4px;
+	background-color: RGBA(94, 138, 196, 1);
+	border-top: none;
+	border-left: none;
 }
 
 .triptic {
