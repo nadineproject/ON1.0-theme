@@ -55,15 +55,13 @@
 
     </td>
     <td id='email-btn' nowrap style="text-align:right">
-      <td id='email-btn' nowrap style="text-align:right">
-        {% if not email.is_primary %}
-          <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_set_primary_link }}';">Make Primary</button>
-          <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_delete_link }}';">Delete</button>
-        {% endif %}
-        {% if not email.is_verified %}
-          <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_send_verif_link }}';">Verify</button>
-        {% endif %}
-      </td>
+      {% if not email.is_primary %}
+        <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_set_primary_link }}';">Make Primary</button>
+        <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_delete_link }}';">Delete</button>
+      {% endif %}
+      {% if not email.is_verified %}
+        <button class='btn waves-effect verify-email' onclick="location.href = '{{ email.get_send_verif_link }}';">Verify</button>
+      {% endif %}
     </td>
   </tr>
   {% endfor %}
