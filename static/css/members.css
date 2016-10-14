@@ -123,13 +123,40 @@ dt, dd {
 	display: inline-block;
 	margin: 0.25em;
 }
-dt { font-weight: bold; }
-dd:after { content:"|"; margin-left: 0.5em; font-size: 1.2em; }
-dl dd:last-child:after { content: ""; }
-table th { padding: 0.5em 0.5em 0.25em; }
-table th:first-child { text-align: left; width: 15%;}
-table td:first-child, table td:last-child { text-align: left; }
-/*table td { text-align: center; border-bottom: 1px solid #ccc; padding: 0.5em; }*/
+
+dt {
+	 font-weight: bold;
+}
+
+dd:after {
+	content:"|";
+	margin-left: 0.5em;
+	font-size: 1.2em;
+}
+
+dl dd:last-child:after {
+	content: "";
+}
+
+table th {
+	padding: 0.5em 0.5em 0.25em;
+}
+
+table th:first-child {
+	text-align: left;
+	/*width: 15%;*/
+}
+
+table td:first-child, table td:last-child {
+	text-align: left;
+}
+
+/*table td {
+	text-align:center;
+	border-bottom: 1px solid #ccc;
+	padding: 0.5em;
+}*/
+
 table td {
 	padding: 0.5em;
 }
@@ -373,6 +400,7 @@ input#id_zipcode {
 #calendar {
 	max-width: 900px;
 	margin-top: 2%;
+	margin-left: 2%;
 }
 
 #make-event {
@@ -567,6 +595,32 @@ table#event-info {
 
 #add-event-header {
 	margin-top: 1%;
+}
+
+/*FullCalendar styling*/
+.fc th, .fc th:first-child {
+	background-color: RGBA(94, 138, 196, .2);
+	text-align: center;
+}
+
+.fc-event {
+	background-color: RGBA(255, 255, 255, 0);
+	color: RGBA(57, 64, 64, 1);
+	border: solid RGBA(255, 255, 255, 0) 1px;
+}
+
+.fc td {
+	background-color: RGBA(255, 255, 255, 1);
+}
+
+.fc-unthemed .fc-today {
+	background-color: RGBA(94, 138, 196, .2);
+}
+
+.fc-event:hover {
+	color: currentColor;
+	font-weight: bold;
+	z-index: 10;
 }
 
 .fc-toolbar .fc-state-active, .fc-toolbar .ui-state-active {

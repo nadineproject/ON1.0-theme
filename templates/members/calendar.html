@@ -1,0 +1,44 @@
+{% extends "members/calendar.html" %}
+
+{% block extrajs %}
+  <script>
+  $(document).ready(function() {
+    $('#calendar').fullCalendar({
+      googleCalendarApiKey: '{{ GOOGLE_API_KEY }}',
+      events: {
+        googleCalendarId: '{{ GOOGLE_CALENDAR_KEY }}',
+        className: 'gcal-event'
+      },
+      selectable: true,
+      selectHelper: true,
+      editable: true,
+      dayClick: function(date) {
+        var date = date.format();
+        $('#create-date').val(date);
+        $('#event-modal').css('display', 'block');
+      }
+    });
+
+    $('.eModal-body').submit(function(e) {
+      e.preventDefault();
+      var title = $('#event-desc').val();
+      var start = moment();
+      var end = moment().add(1, 'days');
+      var where_event = 'Pike';
+      var content_event = 'Foo bar';
+
+      $('#calendar').fullCalendar('renderEvent',
+          {
+          title: title,
+          start: start,
+          end: end
+          },
+          true // make the event "stick"
+      );
+
+      $('#event-modal').css('display', 'none');
+    })
+
+  });
+  </script>
+{% endblock %}
