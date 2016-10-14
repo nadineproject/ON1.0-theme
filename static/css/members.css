@@ -302,7 +302,7 @@ input#id_zipcode {
 }
 
 #email-table td {
-	box-sizing: content-box;;
+	box-sizing: content-box;
 }
 
 #email-table input {
@@ -349,7 +349,7 @@ input#id_zipcode {
 	display: inline-block;
 	vertical-align: top;
 	/* IE fix. */
-	*display: inline;
+	display: inline;
 	zoom: 1;
 }
 
