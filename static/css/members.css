@@ -187,7 +187,7 @@ table td {
 }
 
 /*Edit Profile Page*/
-#contact, #emergencyinfo {
+#contact, #emergencyinfo, #passwords {
 	margin-left: 4%;
 	padding-left: 2%;
 	padding-right: 2%;
